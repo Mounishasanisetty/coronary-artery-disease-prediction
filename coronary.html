@@ -1,0 +1,73 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="#" name="HeartDiseasePrediction" onsubmit="return(validate());">
+<table cellpadding="2" width="45%" bgcolor="FFCCCC" align="center"
+cellspacing="2">
+<tr><td colspan=2><center><font size=4><b>Coronary Artery Disease Prediction using 
+Machine Learning Approach</b></font></center></td></tr>
+<tr><td>Age</td>
+<td><input type="text" name="Age" id="Age" size="15"></td></tr>
+<tr><td>Sex</td>
+<td><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td></tr>
+<tr><td>Resting Blood Pressure(mm/hg)</td>
+<td><input type="text" name="Resting Blood Pressure" id="Resting Blood Pressure" 
+size="30"></td></tr>
+<tr><td>Serum Cholestrol(mg/dl) </td>
+<td><input type="text" name="Serum Cholestrol" id="Serum Cholestrol" 
+size="30"></td></tr>
+<tr><td>Fasting Blood Sugar</td>
+<td><input type="radio" name="FastingBloodSugar" value="Low" size="30">Low (0)
+<input type="radio" name="FastingBloodSugar" value="High" size="10">High(1) 
+</td></tr>
+<tr><td>Smoking</td>
+<td><input type="radio" name="Smoking" value="yes" size="10">Yes
+<input type="radio" name="Smoking" value="No" size="10">No</td></tr>
+<tr><td>Chest Pain Type</td>
+<td><select name="ChestPainType">
+<option value="-1" selected>select…. </option>
+<option value="Typical Angina">Typical Angina</option>
+<option value="Atypical Angina">Atypical Angina</option>
+<option value="Non-anginal Pain">Non-anginal Pain</option>
+<option value="Asymptomatic">Asymptomatic</option>
+</select></td></tr>
+<tr><td>Electro Cardio graphic Results</td>
+<td><select name="Electrocardiographic Results">
+<option value="-1" selected>select...</option>
+<option value="ST-T wave abnormality">ST-T wave abnormality</option>
+<option value="Left ventricular hypertrophy">Left ventricular hypertrophy</option>
+<option value="Normal">Normal</option>
+</select></td></tr>
+<tr><td>Maximum Heartrate Achieved</td>
+<td><input type="radio" name="MaximumHeartrateAchieved" value="Low" 
+size="30">Low (0)
+<input type="radio" name="MaximumHeartrateAchieved" value="High" size="10">High 
+(1) </td></tr>
+<tr><td>Diabetes</td>
+<td><input type="radio" name="Diabetes" value="yes" size="10">Yes
+<input type="radio" name="Diabetes" value="No" size="10">No</td></tr>
+<tr><td>Ca</td>
+<td>
+<input type="radio" name="Ca"/>0<br/>
+<input type="radio" name="Ca"/>1<br/>
+<input type="radio" name="Ca"/>2<br/>
+<input type="radio" name="Ca"/>3<br/>
+</td></tr>
+<tr><td>Thal</td>
+<td><select name="Thal">
+<option value="-1" selected>select...</option>
+<option value="Normal">Normal</option>
+<option value="Fixed Defect">Fixed Defect</option>
+<option value="Reversible Defect">Reversible Defect</option>
+</select></td></tr>
+<tr><td align="left" colspan="6">
+<input type="Reset" name="Reset" value="Reset"/></td></tr>
+<tr><td align="center" colspan="10">
+<input type="submit" name="submit" value="Predict"/></td></tr>
+</table>
+</form>
+</body>
+</html>
